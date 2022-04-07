@@ -3,7 +3,6 @@ const fs = require('fs');
 require('dotenv').config();
 
 
-
 function writePrice(filename, symbol, price) {
     // get current iso date
     const date = new Date().toISOString();
@@ -42,11 +41,7 @@ async function run() {
         writePrice(filename, symbol, price);
     }
 
-    setInterval(async () => {
-
-        saveSymbolPrice(symbol);
-
-    }, 1000 * 60 * 15)
+    
     saveSymbolPrice(symbol);
 
     /*
