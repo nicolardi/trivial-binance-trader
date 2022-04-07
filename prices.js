@@ -41,11 +41,7 @@ async function run() {
         writePrice(filename, symbol, price);
     }
 
-    setInterval(async () => {
-
-        saveSymbolPrice(symbol);
-
-    }, 1000 * 60 * 15)
+    
     saveSymbolPrice(symbol);
 
     /*
