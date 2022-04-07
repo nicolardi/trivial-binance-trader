@@ -1,4 +1,5 @@
+if [ ! -f /data/prices.js ]; then
+  cp -r /src /data
+fi
 npm install
-echo APIKEY="$1" > .env
-echo APISECRET="$2" > .env
-node prices.js
+npm start

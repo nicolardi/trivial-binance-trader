@@ -3,7 +3,6 @@ const fs = require('fs');
 require('dotenv').config();
 
 
-
 function writePrice(filename, symbol, price) {
     // get current iso date
     const date = new Date().toISOString();
